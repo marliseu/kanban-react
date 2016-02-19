@@ -1,0 +1,27 @@
+{
+  "name": "react-app-1",
+  "version": "0.0.1",
+  "description": "A small React app based on the first tutorial from the book Pro React by Cassio de Sousa Antonio.",
+  "author": "Marlise Urscheler",
+  "license": "UNLICENSED",
+  "main": "index.html",
+  "scripts": {
+    "start": "node_modules/.bin/webpack-dev-server --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "react-app-1"
+  },
+  "keywords": [
+    "react"
+  ],
+  "devDependencies": {
+    "babel-core": "^5.8.*",
+    "babel-loader": "^5.3.*",
+    "webpack": "^1.12.*",
+    "webpack-dev-server": "^1.10.*"
+  },
+  "dependencies": {
+    "react": "^0.13.*"
+  }
+}
