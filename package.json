@@ -1,27 +1,23 @@
 {
-  "name": "react-app-1",
-  "version": "0.0.1",
-  "description": "A small React app based on the first tutorial from the book Pro React by Cassio de Sousa Antonio.",
-  "author": "Marlise Urscheler",
-  "license": "UNLICENSED",
-  "main": "index.html",
+  "name": "react-app-boilerplate",
+  "version": "0.1.3",
+  "description": "React application boilerplate",
+  "author": "Cássio Zen",
+  "license": "ISC",
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --progress"
+    "start": "node_modules/.bin/webpack-dev-server --progress",
+    "build": "NODE_ENV=production node_modules/.bin/webpack -p --progress --colors"
   },
-  "repository": {
-    "type": "git",
-    "url": "react-app-1"
-  },
-  "keywords": [
-    "react"
-  ],
   "devDependencies": {
-    "babel-core": "^5.8.*",
-    "babel-loader": "^5.3.*",
-    "webpack": "^1.12.*",
-    "webpack-dev-server": "^1.10.*"
+    "babel-core": "~6.0.*",
+    "babel-loader": "~6.0.*",
+    "babel-preset-es2015": "~6.0.*",
+    "babel-preset-react": "~6.0.*",
+    "webpack": "~1.12.*",
+    "webpack-dev-server": "~1.12.*"
   },
   "dependencies": {
-    "react": "^0.13.*"
+    "react": "~0.14.*",
+    "react-dom": "~0.14.*"
   }
 }
