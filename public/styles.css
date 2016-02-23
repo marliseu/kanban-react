@@ -65,13 +65,13 @@ ul {
   border-bottom: solid 5px transparent;
 }
 
-.card_title:before {
+.card_title::before {
   display: inline-block;
   width: 1em;
   content: '▶';
 }
 
-.card_title--is-open:before {
+.card_title--is-open::before {
   content: '▼';
 }
 
