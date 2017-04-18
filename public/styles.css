@@ -2,6 +2,7 @@ html,body,#app {
   height: 100%;
   margin: 0;
   padding: 0;
+  color: #4d4d4d;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
 
 h1 {
   font-weight: 200;
-  color: #3b414c;
+  color: #2d2d2d;
   font-size: 20px;
 }
 
@@ -19,6 +20,16 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 .app {
@@ -61,18 +72,25 @@ ul {
 }
 
 .card_title {
-  font-weight: bold;
+  color: #2d2d2d;
+  font-weight: normal;
+  font-size: 1.25em;
+  letter-spacing: .01em;
   border-bottom: solid 5px transparent;
+  margin-left:1.5em;
+  cursor: pointer;
 }
 
 .card_title::before {
   display: inline-block;
   width: 1em;
-  content: '▶';
+  content: '▷';
+  margin-left: -1.5em;
+  margin-right:.5em;
 }
 
 .card_title--is-open::before {
-  content: '▼';
+  content: '▽';
 }
 
 .checklist_task:first-child {
@@ -83,6 +101,16 @@ ul {
 
 .checklist_task--remove:after {
   display: inline-block;
+  float: right;
+  margin-right:0.5em;
   color: #d66;
   content: "x";
+}
+
+.checklist--add-task {
+  border:1px dashed #bbb;
+  width:95%;
+  padding:10px;
+  margin-top: 5px;
+  border-radius: 3px;
 }
